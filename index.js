@@ -17,7 +17,7 @@ app.use(cookieParser());
 app.use("/api/v1", routes);
 
 app.get("/", (req, res) => {
-   res.send("mernProject") ;
+   res.send("Express on Vercel") ;
 })
 
 const port = process.env.PORT || 5000;
@@ -35,6 +35,6 @@ server.listen(port, () => {
     process.exit(1);
 }) ;
 
-
+module.exports = app
 
 
