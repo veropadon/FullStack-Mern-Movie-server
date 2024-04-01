@@ -16,6 +16,10 @@ app.use(cookieParser());
 
 app.use("/api/v1", routes);
 
+app.get("/", (req, res) => {
+   res.send("mernProject") ;
+})
+
 const port = process.env.PORT || 5000;
 
 const server =  http.createServer(app);
