@@ -20,7 +20,7 @@ app.get("/", (req, res) => {
    res.send("Express on Vercel") ;
 })
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 5001;
 
 const server =  http.createServer(app);
 
@@ -35,6 +35,5 @@ server.listen(port, () => {
     process.exit(1);
 }) ;
 
-module.exports = app
 
 
